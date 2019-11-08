@@ -18,11 +18,11 @@ function processApi(req, res) {
     if (req.pathname === "/list") {
         obj.list = list;
     } else if (req.pathname === "/add") {
-        let addObj = {};
+        let addObj = {};  //vytvoreno prazdneho objektu pro vlozeni do seznamu
         let dt = new Date();
         addObj.time = dateFormat(dt, "HH.MM.ss");
         addObj.val = req.parameters.value;
-        list.push(addObj);
+        list.push(addObj); //pridani do seznamu
     } else {
         obj.status = API_STATUS_NOT_FOUND;
         obj.error = "API not found";
