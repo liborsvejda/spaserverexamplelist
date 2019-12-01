@@ -3,8 +3,7 @@ const dateFormat = require('dateformat');
 
 const PORT = 8080; //aplikace na Rosti.cz musi bezet na portu 8080
 const API_HEAD = {
-    "Content-type": "application/json",
-    "Access-Control-Allow-Origin": "*"
+    "Content-type": "application/json"
 };
 const API_STATUS_OK = 0;
 const API_STATUS_NOT_FOUND = -1;
